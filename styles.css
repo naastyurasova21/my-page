@@ -531,7 +531,7 @@ footer p {
 }
 
 .carousel-track .hero-card {
-  flex: 0 0 calc((100% - 50px) / 3); /* 3 карточки + 2 промежутка по 25px */
+  flex: 0 0 calc((100% - 50px) / 3);
   min-width: 0;
 }
 
