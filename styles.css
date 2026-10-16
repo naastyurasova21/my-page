@@ -448,38 +448,6 @@ footer p {
   transform: translateX(-50%) translateY(0);
 }
 
-@media (max-width: 768px) {
-  .main {
-    padding: 15px 20px;
-    flex-direction: column;
-    gap: 15px;
-  }
-  nav ul {
-    justify-content: center;
-  }
-  .hero h1 {
-    font-size: 3rem;
-    letter-spacing: 2px;
-  }
-  .heading {
-    font-size: 2.5rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero h1 {
-    font-size: 2.2rem;
-  }
-  .heading {
-    font-size: 2rem;
-  }
-  .season-num {
-    font-size: 2.5rem;
-  }
-  .hero-card img {
-    height: 240px;
-  }
-}
 .hidden-block {
   max-height: 0;
   overflow: hidden;
@@ -871,6 +839,14 @@ body.dark .season-card.finale h3 {
     font-size: 0.95rem;
     margin-top: 4px;
   }
+  .hero h1 {
+    font-size: 3rem;
+    letter-spacing: 2px;
+  }
+
+  .heading {
+    font-size: 2.5rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -896,5 +872,20 @@ body.dark .season-card.finale h3 {
   .theme-btn {
     padding: 5px 10px;
     font-size: 0.85rem;
+  }
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+
+  .season-num {
+    font-size: 2.5rem;
+  }
+
+  .hero-card img {
+    height: 240px;
   }
 }
