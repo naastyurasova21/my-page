@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Очень странные дела — сериал</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="main">
+        <div class="logo">🔴 STRANGER THINGS</div>
+        <nav>
+          <ul>
+            <li class="active"><a href="#home">Главная</a></li>
+            <li><a href="#about">О сериале</a></li>
+            <li><a href="#seasons">Сезоны</a></li>
+            <li><a href="#heroes">Герои</a></li>
+            <li><a href="#creators">Создатели</a></li>
+          </ul>
+        </nav>
+        <button
+          class="theme-btn"
+          onclick="toggleTheme()"
+          title="Переключить тему"
+        >
+          <i class="fas fa-moon"></i>
+        </button>
+      </div>
+
+      <div class="hero" id="home">
+        <h1>Очень странные дела</h1>
+        <p>
+          Научная фантастика, хоррор и ностальгия по 80-м. История о том, как
+          дружба и смелость побеждают тьму из параллельного измерения.
+        </p>
+        <div class="hero-buttons">
+          <a href="#about" class="btn">О сериале</a>
+          <a href="#heroes" class="btn btn-outline">Персонажи</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="about" id="about">
+      <h2 class="heading"><span>О</span> сериале</h2>
+      <div class="row">
+        <div class="image-box">
+          <img src="images/hero-bg.jpg" alt="Очень странные дела" />
+        </div>
+        <div class="content">
+          <h3>Что такое «Очень странные дела»?</h3>
+          <p>
+            «Очень странные дела» (Stranger Things) — американский
+            научно-фантастический сериал от братьев Даффер, выходящий на Netflix
+            с 2016 года. Действие происходит в 1980-х в вымышленном городке
+            Хоукинс, штат Индиана.
+          </p>
+          <p>
+            Сюжет начинается с исчезновения мальчика Уилла Байерса. Его друзья —
+            Майк, Дастин и Лукас — вместе с загадочной девочкой Одиннадцать
+            раскрывают тайну параллельного измерения «Изнанка» и секретной
+            лаборатории.
+          </p>
+          <p>
+            Сериал получил более 70 наград, включая премии «Эмми», и стал одним
+            из самых популярных проектов Netflix в истории.
+          </p>
+        </div>
+      </div>
+      <div class="facts-box">
+        <div class="facts-header">
+          <span class="facts-rec">● REC</span>
+          <h3>Интересные факты</h3>
+          <span class="facts-date" id="factsDate"></span>
+        </div>
+
+        <div class="facts-screen">
+          <span class="fact-line">
+            <span id="fact-text" class="fact-text"></span
+            ><span class="cursor">▌</span>
+          </span>
+        </div>
+        <button class="btn facts-btn" onclick="showRandomFact()">
+          <i class="fas fa-film"></i> Новый факт
+        </button>
+
+        <div class="facts-footer">● LIVE FROM HAWKINS, INDIANA ●</div>
+      </div>
+    </section>
+
+    <section id="seasons">
+      <h2 class="heading"><span>Сезоны</span> сериала</h2>
+      <div class="seasons-grid">
+        <div class="season-card">
+          <div class="season-num">1</div>
+          <h3>Сезон 1</h3>
+          <p class="season-year">2016 · 8 эпизодов</p>
+          <p>
+            Исчезновение Уилла, появление Одиннадцать и первые встречи с
+            Демогоргоном.
+          </p>
+        </div>
+        <div class="season-card">
+          <div class="season-num">2</div>
+          <h3>Сезон 2</h3>
+          <p class="season-year">2017 · 9 эпизодов</p>
+          <p>Возвращение Уилла, Демодоги и тайна Мозгового монстра.</p>
+        </div>
+        <div class="season-card">
+          <div class="season-num">3</div>
+          <h3>Сезон 3</h3>
+          <p class="season-year">2019 · 8 эпизодов</p>
+          <p>
+            Лето в торговом центре «Старкорт», секретная лаборатория под ним и
+            Пожиратель разума.
+          </p>
+        </div>
+        <div class="season-card">
+          <div class="season-num">4</div>
+          <h3>Сезон 4</h3>
+          <p class="season-year">2022 · 9 эпизодов</p>
+          <p>
+            Калифорния, Россия и Хоукинс. Появление Векны и раскрытие прошлого
+            Одиннадцать.
+          </p>
+        </div>
+        <div class="season-card finale">
+          <div class="season-num">5</div>
+          <h3>Сезон 5</h3>
+          <p class="season-year">2025 · финальный</p>
+          <p>Заключительная глава истории — финальная битва с Изнанкой.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="heroes">
+      <h2 class="heading"><span>Главные</span> герои</h2>
+
+      <div class="carousel">
+        <button
+          class="carousel-btn prev"
+          onclick="slideHeroes(-1)"
+          aria-label="Назад"
+        >
+          <i class="fas fa-chevron-left"></i>
+        </button>
+
+        <div class="carousel-window">
+          <div class="carousel-track" id="heroTrack">
+            <div class="hero-card">
+              <img src="images/eleven.jpg" alt="Одиннадцать" />
+              <h3>Одиннадцать (Оди)</h3>
+              <p>
+                Девочка с психокинетическими способностями, сбежавшая из
+                лаборатории.
+              </p>
+            </div>
+            <div class="hero-card">
+              <img src="images/mike.jpg" alt="Майк Уилер" />
+              <h3>Майк Уилер</h3>
+              <p>Лидер компании друзей, верный и смелый.</p>
+            </div>
+            <div class="hero-card">
+              <img src="images/dustin.jpg" alt="Дастин Хендерсон" />
+              <h3>Дастин Хендерсон</h3>
+              <p>Умный и обаятельный, любит науку и гаджеты.</p>
+            </div>
+            <div class="hero-card">
+              <img src="images/hopper.jpg" alt="Джим Хоппер" />
+              <h3>Джим Хоппер</h3>
+              <p>Шериф Хоукинса, защитник города и приёмный отец Оди.</p>
+            </div>
+            <div class="hero-card">
+              <img src="images/joyce.jpg" alt="Джойс Байерс" />
+              <h3>Джойс Байерс</h3>
+              <p>Мать Уилла, готовая на всё ради сына.</p>
+            </div>
+            <div class="hero-card">
+              <img src="images/steve.jpg" alt="Стив Харрингтон" />
+              <h3>Стив Харрингтон</h3>
+              <p>От школьного задиры — до настоящего героя.</p>
+            </div>
+          </div>
+        </div>
+
+        <button
+          class="carousel-btn next"
+          onclick="slideHeroes(1)"
+          aria-label="Вперёд"
+        >
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+
+      <div class="carousel-dots" id="heroDots"></div>
+      <div class="secret-wrapper">
+        <button class="btn secret-btn" onclick="toggleHiddenBlock()">
+          <i class="fas fa-eye"></i> Открыть секретный блок
+        </button>
+      </div>
+
+      <div class="hidden-block" id="hiddenBlock">
+        <h3>🔦 Секретный блок</h3>
+        <p>
+          Добро пожаловать в Изнанку! Пасхалка: номер телефона Хоукинса —
+          618-625-8313.
+        </p>
+      </div>
+    </section>
+
+    <section class="creators" id="creators">
+      <h2 class="heading"><span>Создатели</span> и режиссёры</h2>
+      <div class="creators-grid">
+        <div class="creator-card">
+          <h3>Братья Даффер</h3>
+          <p>
+            Мэтт и Росс Даффер — создатели, сценаристы и шоураннеры сериала.
+          </p>
+        </div>
+        <div class="creator-card">
+          <h3>Шон Леви</h3>
+          <p>Режиссёр нескольких эпизодов, известен также по «Ночи в музее».</p>
+        </div>
+        <div class="creator-card">
+          <h3>Кайл Диксон и Джастин Пол</h3>
+          <p>Режиссёры ключевых эпизодов 2–4 сезонов.</p>
+        </div>
+        <div class="creator-card">
+          <h3>Композиторы</h3>
+          <p>
+            Kyle Dixon & Michael Stein (S U R V I V E) — авторы заглавной темы.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>🔴 Фан-сайт сериала «Очень странные дела»</p>
+      <p>Сделано с любовью к 80-м</p>
+      <p>© 2026 · Все права принадлежат Netflix</p>
+    </footer>
+
+    <div id="notification"></div>
+    <button
+      id="scrollTopBtn"
+      onclick="scrollToTop()"
+      title="Наверх"
+      aria-label="Наверх"
+    >
+      <i class="fas fa-arrow-up"></i>
+    </button>
+    <script src="app.js"></script>
+  </body>
+</html>
